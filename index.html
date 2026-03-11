@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Store</title>
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#f2f2f2;
+text-align:center;
+}
+
+header{
+background:black;
+color:white;
+padding:20px;
+}
+
+.products{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:20px;
+}
+
+.product{
+background:white;
+padding:15px;
+margin:10px;
+border-radius:10px;
+width:200px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+button{
+background:#25D366;
+color:white;
+border:none;
+padding:10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+background:black;
+color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Elite Store</h1>
+<p>أفضل المنتجات بأفضل الأسعار</p>
+</header>
+
+<h2>المنتجات</h2>
+
+<div class="products">
+
+<div class="product">
+<h3>Wireless Power Bank</h3>
+<p>بطارية لاسلكية 10000mAh</p>
+<button onclick="order()">اطلب عبر واتساب</button>
+</div>
+
+<div class="product">
+<h3>WiFi Camera</h3>
+<p>كاميرا مراقبة تعمل بالهاتف</p>
+<button onclick="order()">اطلب عبر واتساب</button>
+</div>
+
+</div>
+
+<footer>
+<p>© Elite Store</p>
+</footer>
+
+<script>
+function order(){
+window.open("https://wa.me/212680504853","_blank");
+}
+</script>
+
+</body>
+</html>
